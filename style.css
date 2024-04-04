@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Lilita+One&family=Madimi+One&family=Parisienne&family=Permanent+Marker&family=Titan+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One';
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+    cursor: pointer;;
+}
+
+nav .logo span{
+    color: #800080;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(35, 33, 33);
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    font-size: 20px;
+    color: #800080;
+}
+
+.content{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.content h1{
+    font-size: 2.5rem;
+}
+
+.content h1 span {
+    color: #800080;
+}
+
+.content button{
+    height: 2.3rem;
+    width: 10rem;
+    font-size: larger;
+    border: #fff solid;
+    border-radius: 20px;
+    background-color: #800080;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content button:hover{
+    transition: 0.2s;
+    height: 2.5rem;
+    width: 10.5rem;
+}
+
+.content #video{
+    transition: 0.2s;
+    visibility: hidden;
+    height: 300px;
+    width: 600px;
+}
+
+#icon{
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav{
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        border-bottom: #800080 5px solid;
+    }
+
+    nav ul {
+      position:absolute;
+      display: flex;
+      flex-direction: column;
+      top: 75px;
+      left: 17rem;
+      right: 0;
+      background-color: #ffffffc8;
+      box-shadow: 0 5px 0 5px black;
+      visibility: hidden;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+    }
+
+    nav .logo{
+        font-size: 30px;
+    }
+
+    nav #icon{
+        visibility: visible;
+        display: block;
+        font-size: 37px;
+        cursor: pointer;
+    }
+
+    .content{
+        height: calc(100% - 10rem);
+    }
+
+    .content #video{
+        height: 250px;
+        width: 300px;
+    }
+}
